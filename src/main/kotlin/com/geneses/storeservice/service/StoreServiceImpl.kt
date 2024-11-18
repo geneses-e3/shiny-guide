@@ -1,5 +1,6 @@
 package com.geneses.com.geneses.storeservice.service
 
+import com.geneses.com.geneses.storeservice.exception.StoreNotFoundException
 import com.geneses.com.geneses.storeservice.model.Store
 import com.geneses.com.geneses.storeservice.repository.StoreRepository
 import org.springframework.beans.factory.annotation.Autowired
@@ -23,7 +24,9 @@ class StoreServiceImpl @Autowired constructor(private val storeRepository: Store
     }
 
     override fun getStoreById(id: String): Store? {
-        return storeRepository.findById(id).orElse(null)
+        return storeRepository.findById(id).orElseThrow {
+            StoreNotFoundException("Store with ID $id not found")
+        }
     }
 
     override fun updateStore(id: String, store: Store): Store? {
