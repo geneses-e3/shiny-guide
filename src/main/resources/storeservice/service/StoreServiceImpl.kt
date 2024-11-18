@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service
 class StoreServiceImpl @Autowired constructor(private val storeRepository: StoreRepository) : StoreService {
 
 
-
     override fun createStore(store: Store): Store {
         return storeRepository.save(store)
     }

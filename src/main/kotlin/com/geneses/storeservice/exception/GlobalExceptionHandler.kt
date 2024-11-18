@@ -1,4 +1,4 @@
-package com.geneses.com.geneses.storeservice.exception
+package com.geneses.storeservice.exception
 
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity

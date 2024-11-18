@@ -3,7 +3,6 @@ package com.geneses.storeservice.service
 import com.geneses.storeservice.model.Store
 
 
-
 interface StoreService {
     fun createStore(store: Store): Store
     fun getAllStores(): List<Store>

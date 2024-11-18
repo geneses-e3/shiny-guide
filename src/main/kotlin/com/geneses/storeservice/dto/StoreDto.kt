@@ -1,4 +1,10 @@
-package com.geneses.com.geneses.storeservice.dto
+package com.geneses.storeservice.dto
 
-class StoreDto {
-}
+data class StoreDto(
+    val id: String?,
+    val name: String,
+    val handle: String,
+    val description: String,
+    val location: String,
+    val ownerId: String,
+)

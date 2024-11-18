@@ -1,3 +1,3 @@
-package com.geneses.com.geneses.storeservice.exception
+package com.geneses.storeservice.exception
 
-class StoreNotFoundException(message: String): RuntimeException(message)
+class StoreNotFoundException(message: String) : RuntimeException(message)

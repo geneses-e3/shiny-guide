@@ -1,7 +1,6 @@
-package com.geneses.com.geneses.storeservice.service
+package com.geneses.storeservice.service
 
-import com.geneses.com.geneses.storeservice.model.Store
-
+import com.geneses.storeservice.model.Store
 
 
 interface StoreService {
